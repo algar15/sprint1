@@ -1,98 +1,94 @@
 * {
-    margin: 10px;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-.contenedor{
+.menu-navegacion{
+    padding: 0;
     display: flex;
-    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
 }
-    .header{
-    background: #000;
+.logo{
+    height: 80px;
+}
+.logo img{
+    display: block;
+    height: 100%;
+    margin-left:50px;
+}
+.enlaces li{
+    list-style: none;
+    display: inline-block;
+}
+.enlaces a{
+    text-decoration: none;
+    color:#777777;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+.fas{
+    color: #777777;
+    padding-left: 15px;
+}
+.boton:hover{
+    background:#e66b7fc2;
+}
+.boton{
+    border:solid 0px;
+    background: snow;
+}
+.far{
+    color:#777777;
+    padding-left: 15px;
+}
+.fab{
+    color: #777777;
+    padding-right: 100px;
+    padding-left: 15px;
+}
+.fab:hover{
+    background: rgba(100, 100, 199, 0.671);
+}
+.social i{
+    list-style: none;
+    display: block;
+    margin:15px;
+}
+.img{
+    height: 475px;
+    background-image: url("img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+.img h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+.contenedor-texto{
+    padding: 0;
+    height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    }
-        .menu{
-            background: #2d4059;
-            display: flex;
-            flex-flow: row nowrap;
-            height: 100px;
-            align-items: center;
-        }
-            .logo{
-                background: #ea5455;
-                flex: 1 1 auto;
-                height: 30px;
-            }
-            .nav{
-                background: #ea5455;
-                flex: 5 1 auto;
-                height: 30px;
-            }
-            .social{
-                background: #ea5455;
-                flex: 1 1 auto;
-                height: 30px;
-            }
-        .texto-principal{
-            background: #f07b3f;
-        }
-            h1{
-                background: #ffd460;
-            }
-    .section{
-    background: #000;
-    display: flex;
-    }
-        .articulos{
-            background: #4e4e6a;
-            flex: 2 1 auto;
-            display: flex;
-            flex-flow: row wrap;
-        }
-            .article{
-                background: #1f6cb0;
-                flex: 1 1 40%;
-            }
-            .navegacion{
-                background: #70a3c4;
-                flex: 1 1 100%;
-            }
-        .aside{
-            background: #f73f52;
-            flex: 1 1 auto;
-        }
-            .publicidad{
-                background: #ffea85;
-            }
-    .footer{
-    background: #000;
-    }
-        .pie{
-            background: #e6af2e;
-        }
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:#e66b80;
+    opacity: 0.5;
+}
 @media all and (max-width: 1024px){
-    .section{
-        flex-direction: column;
-        background: #fde616;
+    .menu-navegacion{
+        display: inline-flex;
     }
 }
 @media all and (max-width: 768px){
-    .menu{
-        flex-direction: column;
+    .menu-navegacion{
         height: auto;
     }
-        .logo{
-            width: calc(100% - 20px);
-        }
-        .nav{
-            width: calc(100% - 20px);
-        }
-        .social{
-            width: calc(100% - 20px);
-        }
-    .articulos{
-        flex-direction: column;
+    .menu{
+        display:inline-flex;
     }
 }
