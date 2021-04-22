@@ -1,94 +1,48 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+*{
+    font-family: sans-serif;
 }
-.menu-navegacion{
-    padding: 0;
+.section{
+    background: #000;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
 }
-.logo{
-    height: 80px;
-}
-.logo img{
-    display: block;
-    height: 100%;
-    margin-left:50px;
-}
-.enlaces li{
-    list-style: none;
-    display: inline-block;
-}
-.enlaces a{
-    text-decoration: none;
-    color:#777777;
-    padding-left: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:15px;
-}
-.fas{
-    color: #777777;
-    padding-left: 15px;
-}
-.boton:hover{
-    background:#e66b7fc2;
-}
-.boton{
-    border:solid 0px;
-    background: snow;
-}
-.far{
-    color:#777777;
-    padding-left: 15px;
-}
-.fab{
-    color: #777777;
-    padding-right: 100px;
-    padding-left: 15px;
-}
-.fab:hover{
-    background: rgba(100, 100, 199, 0.671);
-}
-.social i{
-    list-style: none;
-    display: block;
-    margin:15px;
-}
-.img{
-    height: 475px;
-    background-image: url("img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-}
-.img h1{
-    font-size: 35px;
-    font-weight: 700;
-}
-.contenedor-texto{
-    padding: 0;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#e66b80;
-    opacity: 0.5;
-}
-@media all and (max-width: 1024px){
-    .menu-navegacion{
-        display: inline-flex;
+    .articulos{
+        background: #f7f7f7;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
     }
-}
-@media all and (max-width: 768px){
-    .menu-navegacion{
-        height: auto;
+    .article{
+        flex: 1 1 40%;
+        color: #444;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin: 10px 10px 0 0px;
+        flex: 1 1 45%;
+        background: #ececec;
     }
-    .menu{
-        display:inline-flex;
+    .article img{
+        width: 100%;
     }
-}
+    .article a{
+        color: rgb(199, 194, 194);
+        font-size: 13px;
+        padding: 10px;
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .article a:hover{
+        background: rgb(226, 109, 109);
+    }
+    h3{
+        color: #fff;
+        font-size: 13px;
+        padding: 2px 0;
+        margin-top: -20px;
+    }
+    h2{
+        font-size: 25px;
+        padding: 10px 0 0px 0;
+        color: #fff;
+        background: rgb(226, 109, 109);
+        margin-top: -20px;
+    }
